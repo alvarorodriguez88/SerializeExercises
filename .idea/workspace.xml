@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c55e92d7-da12-40ec-b73a-dacf3ac70804" name="Changes" comment="Exercise 1 already done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c55e92d7-da12-40ec-b73a-dacf3ac70804" name="Changes" comment="Exercise 3 already done">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SerializationExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SerializationExercises.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SerializationExercises$Exercise3">
+  <component name="RunManager" selected="Application.SerializationExercises$Exercise2">
     <configuration name="SerializationExercises$Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.SerializationExercises$Exercise1" />
       <module name="org.example" />
@@ -96,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SerializationExercises$Exercise3" />
         <item itemvalue="Application.SerializationExercises$Exercise2" />
+        <item itemvalue="Application.SerializationExercises$Exercise3" />
         <item itemvalue="Application.SerializationExercises$Exercise1" />
       </list>
     </recent_temporary>
@@ -119,11 +118,29 @@
       <option name="project" value="LOCAL" />
       <updated>1696678555601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exercise 2 already done">
+      <option name="closed" value="true" />
+      <created>1696681707232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696681707232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Exercise 3 already done">
+      <option name="closed" value="true" />
+      <created>1696681775080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696681775080</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercise 1 already done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise 1 already done" />
+    <MESSAGE value="Exercise 2 already done" />
+    <MESSAGE value="Exercise 3 already done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercise 3 already done" />
   </component>
 </project>

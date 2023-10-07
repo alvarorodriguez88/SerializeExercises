@@ -95,7 +95,7 @@ public class SerializationExercises {
             try (FileInputStream fileInputStream = new FileInputStream("outputStream1.txt")){
                 ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
                 Movie movie3 = (Movie) objectInputStream.readObject();
-                System.out.println("MOVIE 1: " + movie3);
+                System.out.println("MOVIE 1 NAME: " + movie3.getTitle() + " DURATION: " + movie3.getDuration());
             } catch (IOException e){
                 System.out.println("ERROR: " + e);
             } catch (ClassNotFoundException e) {
@@ -104,7 +104,7 @@ public class SerializationExercises {
             try(FileInputStream fileInputStream2 = new FileInputStream("outputStream2.txt")){
                 ObjectInputStream objectInputStream2 = new ObjectInputStream(fileInputStream2);
                 Movie movie4 = (Movie) objectInputStream2.readObject();
-                System.out.println("MOVIE 2: " + movie4);
+                System.out.println("MOVIE 2 NAME: " + movie4.getTitle() + " DURATION: " + movie4.getDuration());
             } catch (IOException e){
                 System.out.println("ERROR: " + e);
             } catch (ClassNotFoundException e) {
