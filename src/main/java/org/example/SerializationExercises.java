@@ -42,9 +42,6 @@ public class SerializationExercises {
                 System.out.println("ERROR: " + e);
             }
 
-            System.out.println(movie1json);
-            System.out.println(movie2json);
-
         }
     }
 
@@ -56,22 +53,36 @@ public class SerializationExercises {
 
         public static void main(String[] args) {
 
-            //FileOutputStream fileOutputStream = new FileOutputStream("example1.txt");
-            //ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-            //objectOutputStream.writeObject(movie1);
-            //objectOutputStream.close();
-//
-            //FileOutputStream fileOutputStream1 = new FileOutputStream("example2.txt");
-            //ObjectOutputStream objectOutputStream1 = new ObjectOutputStream(fileOutputStream1);
-            //objectOutputStream1.writeObject(movie2);
-            //objectOutputStream1.close();
-//
-            //FileInputStream fileInputStream = new FileInputStream("example1.txt");
-            //ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-            //Movie movie1InFile = (Movie) objectInputStream.readObject();
-            //objectInputStream.close();
-            //System.out.println(movie1InFile);
-//
+            Gson gson = new Gson();
+            try (FileReader fileReader1 = new FileReader("writer1.json")){
+                Movie movie1 = gson.fromJson(fileReader1, Movie.class);
+                System.out.println("MOVIE 1: TITLE -> " + movie1.getTitle() + " DURATION: " + movie1.getDuration());
+            } catch (IOException e){
+                System.out.println("ERROR: " + e);
+            }
+
+            try (FileReader fileReader2 = new FileReader("writer2.json")){
+                Movie movie2 = gson.fromJson(fileReader2, Movie.class);
+                System.out.println("MOVIE 2: TITLE -> " + movie2.getTitle() + " DURATION: " + movie2.getDuration());
+            } catch (IOException e){
+                System.out.println("ERROR: " + e);
+            }
+
+            Movie movie3 = new Movie("Fast & Furious", 180);
+            Movie movie4 = new Movie("Mortadelo y Filemon", 120);
+
+            try (FileOutputStream fileOutputStream = new FileOutputStream("outputStream1.txt")){
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+                objectOutputStream.writeObject(movie3);
+            } catch (IOException e){
+                System.out.println("ERROR: " + e);
+            }
+            try (FileOutputStream fileOutputStream1 = new FileOutputStream("outputStream2.txt")){
+                ObjectOutputStream objectOutputStream2 = new ObjectOutputStream(fileOutputStream1);
+                objectOutputStream2.writeObject(movie4);
+            } catch (IOException e){
+                System.out.println("ERROR: " + e);
+            }
         }
     }
 
