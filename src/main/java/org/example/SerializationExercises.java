@@ -17,7 +17,7 @@ public class SerializationExercises {
 
     public static class Exercise1 {
         public static void main(String[] args) throws IOException, ClassNotFoundException {
-            Movie movie1 = new Movie("Avatar", 150);
+            Movie movie1 = new Movie("Los Minions", 150);
             Movie movie2 = new Movie("Cars", 120);
             Theater theater1 = new Theater("Los Alisios", 40);
             Theater theater2 = new Theater("El Muelle", 35);
@@ -25,8 +25,6 @@ public class SerializationExercises {
             Session session2 = new Session(movie2, theater2);
             
             Gson gson = new Gson();
-            String movie1json = gson.toJson(movie1);
-            String movie2json = gson.toJson(movie2);
 
             try (FileWriter writer = new FileWriter("writer1.json")){
                 gson.toJson(movie1, writer);
